@@ -1,0 +1,60 @@
+.container{
+    display: flex;
+    width: 95%;
+    margin-top: 1.6rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.todos{
+    display: flex;
+    width: 47.5%;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0 5px ;
+    border-radius: 7px;
+    background-color: rgba(13, 87, 0, 0.618);
+    /* border: 1px solid wheat; */
+}
+
+.todos__heading{
+    display: block;
+    text-align: center;
+}
+
+.complete{
+    background-color: rgba(153, 0, 0, 0.618);
+}
+
+.message{
+    color: rgb(94, 1, 1);
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}
+
+.todos__heading{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+}
+
+.dragactive{
+    background-color: rgba(13, 87, 0, 0.818);
+}
+
+.dragcomplete{
+    background-color: rgba(153, 0, 0, 0.818);;
+}
+
+@media screen and (max-width: 750px) {
+    .container{
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .todos{
+        width: 90%;
+        margin-bottom: 4px;
+    }
+}

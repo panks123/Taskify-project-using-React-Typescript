@@ -1,0 +1,46 @@
+.input{
+    display: flex;
+    width: 90%;
+    position: relative;
+    align-items: center;
+}
+
+.input__box{
+    width: 100%;
+    border-radius: 50px;
+    padding: 1.1rem 1.2rem;
+    border: none;
+    font-size: 1.2rem;
+    transition: 0.2s;
+    box-shadow: inset 0 0 3px black;
+}
+
+.input__box:focus{
+    box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.4); /* On focus it will shadow outside of it the whole viewport*/
+    outline: none;
+}
+
+.input__submit{
+    position: absolute;
+    right: 2px;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: rgb(38, 38, 252);
+    color: white;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 10px black;
+    margin: 3px;
+}
+
+.input__submit:hover{
+    background-color: rgb(81, 81, 247);
+}
+
+.input__submit:active{
+    transform: scale(0.8);
+    box-shadow: 0 0 5px black;
+}
